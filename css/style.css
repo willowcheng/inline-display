@@ -112,4 +112,8 @@ a {
         width: 240px;
     }
 
+    .main-nav li {
+        margin-right: 12px;
+    }
+
 }
