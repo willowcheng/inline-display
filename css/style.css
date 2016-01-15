@@ -114,7 +114,27 @@ img {
 
 @media (min-width: 769px) {
 
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
 
     /* ---- Float clearfix ---- */
 
