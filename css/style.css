@@ -1,5 +1,5 @@
 /* =================================
-  Base Styles
+  Base Element Styles
 ==================================== */
 
 * {
@@ -14,7 +14,7 @@ body {
 
 p {
     font-size: .95em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.8em;
 }
 
 h2,
@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -42,19 +46,9 @@ a {
     font-size: 1.25em;
 }
 
-.name,
-.main-nav li {
-    text-align: center;
-    background: #fff;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
 .name a,
 .main-nav a {
-    padding: 10px 15px;
     text-align: center;
-    display: block;
 }
 
 .main-nav a {
@@ -69,83 +63,35 @@ a {
 
 /* ---- Layout Containers ---- */
 
-.container {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.main-header {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+.banner {
+    color: #fff;
     background: #3acec2;
-    margin-bottom: 30px;
 }
 
 .main-footer {
-    text-align: center;
-    padding: 2em 0;
     background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+    width: 190px;
 }
 
 /* =================================
   Media Queries
 ==================================== */
 
-@media (min-width: 789px) {
+@media (min-width: 769px) {
 
-    .wrap {
-        min-height: calc(100vh - 89px);
-    }
 
-    .container {
-        width: 85%;
-        max-width: 1150px;
-        margin: 0 auto;
-    }
 
-    .main-nav {
-        float: right;
-    }
-
-    .name,
-    .main-nav li {
-        float: left;
-    }
-
-    .main-nav li {
-        margin-left: 12px;
-    }
-
-    /* ---- Columns ---- */
-
-    .col {
-        float: right;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    .primary {
-        width: 60%;
-    }
-
-    .secondary {
-        width: 40%;
-    }
-
-    /* ------------- */
-
-    .feat-img {
-        width: 300px;
-        float: left;
-        margin-top: 5px;
-        margin-right: 25px;
-        margin-bottom: 25px;
-        padding: 10px;
-        border: solid 1px #d9e4ea;
-    }
+    /* ---- Float clearfix ---- */
 
     .clearfix::after {
-        content: "";
+        content: " ";
         display: table;
         clear: both;
     }
