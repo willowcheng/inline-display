@@ -44,11 +44,18 @@ img {
 
 .name {
     font-size: 1.25em;
+    margin: 0;
+}
+
+.main-nav {
+    margin-top: 5px;
 }
 
 .name a,
 .main-nav a {
     text-align: center;
+    display: block;
+    padding: 10px 15px;
 }
 
 .main-nav a {
@@ -63,9 +70,26 @@ img {
 
 /* ---- Layout Containers ---- */
 
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+    text-align: center;
+}
+
 .banner {
     color: #fff;
     background: #3acec2;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .main-footer {
@@ -78,6 +102,10 @@ img {
 
 .logo {
     width: 190px;
+}
+
+.headline {
+    margin-bottom: 0;
 }
 
 /* =================================
